@@ -30,7 +30,7 @@ export default {
 
                 if(this.cart.length > 0){
                     for (let index = 0; index < this.cart.length; index++) {
-                        this.summ += this.cart[index]['price']                    
+                        this.summ += this.cart[index]['price']
                     }
                 }
                 else{
@@ -76,8 +76,6 @@ export default {
                 <div class="card-body">
                     <h1 class="card-title pricing-card-title">{{ product.price }}р.<small class="text-muted fw-light"> &times; 
                     {{count}} шт.</small></h1>
-                    <button type="button" class="btn btn-lg btn-info mb-3">+</button>
-                    <button type="button" class="btn btn-lg btn-warning mb-3">&minus;</button>
                     <button type="button" class="btn btn-lg btn-outline-danger mb-3" @click.prevent="deleteCart(product.id)">Удалить из корзины</button>
                 </div>
             </div>
