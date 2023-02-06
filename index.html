@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>«Самоход»</title>
+    <script src="./js/vue.js"></script>
+    <script src="./js/vue-router.global.js"></script>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-3" id="app"></div>
+<script type="module">
+    import indexComponent from './js/components/indexComponent.js';
+    import router from './js/components/router/router.js';
+    const {createApp} = Vue
+    createApp(indexComponent).use(router).mount('#app');
+</script>
+</body>
+</html>
